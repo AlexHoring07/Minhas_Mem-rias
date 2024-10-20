@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <nav>
+            <button onclick="scrollToSection('fotos')">Fotos</button>
+            <button onclick="scrollToSection('conclusao')">Conclusão</button>
+        </nav>
+    </header>
 
+    <!-- Seção de fotos -->
+    <section id="fotos" class="gallery-section">
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="Site.Duda.1.jpg" alt="Foto 1">
+                <h2>Dormindo em uma ala vaga</h2>
+                <p>Data: 21/08/2022</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Duda.2.jpg" alt="Foto 2">
+                <h2>Abraçada com meu amigo Pedro esperando a professora chegar</h2>
+                <p>Data: 17/10/2022</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Duda.3.jpg" alt="Foto 3">
+                <h2>Indo para uma festa com minha amiga Lorany</h2>
+                <p>Data: 22/11/2022</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Duda.4.jpg" alt="Foto 4">
+                <h2>Visita ao museu de segurança no trânsito com meus amigos</h2>
+                <p>Data: 25/03/2023</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Duda.5.jpg" alt="Foto 5">
+                <h2>Eu e meu amigo Nicogol na volta da educação física</h2>
+                <p>Data: 15/08/2024</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Duda.6.jpg" alt="Foto 6">
+                <h2>Eu e meus amigos no churrasco da formatura</h2>
+                <p>Data: 29/09/2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusão -->
+    <section id="conclusao" class="conclusion-section">
+        <div class="thanks-box">
+            <h2>Agradecimento</h2>
+            <p>
+                Bom esses últimos anos foram anos de aprendizado, conquistas e realizações, além disso
+                também criei várias amizades que me fizeram dar várias risadas. No segundo ano, fomos
+                na gruta com a professora de geografia e formamos um grupo que até hoje a gente tem 
+                contato e conversamos. No terceirão, apesar de não estar todos os meus amigos na mesma
+                turma, estou muito animada por aproveitar meu último ano ao lado de pessoas que se
+                importam e cuidam de mim!!! Estou muito empolgada para a fomatura da turma pois será 
+                um momento de muita diversão e alegria ao lado de pessoas que sempre me apoiam e estão
+                ao meu lado nos melhores e piores momentos.
+            </p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Colégio Estadual Padre Cláudio Morelli - Alex Victor dos Santos Horing - N°03 - 3°E</p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
